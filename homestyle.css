@@ -61,6 +61,20 @@ body {
     }
 }
 
+body {
+    background-image: url('https://imgur.com/a/xVgxtb1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the image is in front of other content */
+}
 
 
 
