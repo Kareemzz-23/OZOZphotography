@@ -79,20 +79,17 @@ body, html {
     height: auto; /* Maintain the aspect ratio */
   }
   
-  .content {
+  .content-section {
     margin-top: 200px; /* Adjust this value to be at least the height of the banner image */
     padding: 20px;
   }
-   
-  /* Content Section */
-h4 {
+  
+  .content-heading {
     margin: 20px 0;
     font-size: 2em;
-}
-.content-section {
-    margin: 20px; 
-    padding: 15px; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    background-color: #f9fafc;
-}
+  }
+  
+  .content-paragraph {
+    margin: 20px 0;
+    font-size: 1em;
+  }
