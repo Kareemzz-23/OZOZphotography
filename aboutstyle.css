@@ -26,7 +26,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #f69713;
+    color: #0b00a5;
 }
 
 /* Hamburger menu styles */
@@ -71,6 +71,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 200px; /* Adjust this value based on the height of your banner image */
+    overflow: hidden;
     z-index: 1000; /* Ensures the banner stays on top of other content */
   }
   
@@ -83,6 +85,20 @@ body {
     margin-top: 200px; /* Adjust this value based on the height of your banner image */
     padding: 20px;
   }
+
+  /* Content Section */
+h4 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+.content-section {
+    margin: 20px; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9fafc;
+}
+
   
   /* Content Section */
 h4 {
