@@ -84,3 +84,15 @@ body {
     padding: 20px;
   }
   
+  /* Content Section */
+h4 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+.content-section {
+    margin: 20px; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9fafc;
+}
