@@ -62,44 +62,28 @@ body {
 }
 
 /* styles.css */
-body {
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
   }
   
-  .banner {
-    position: fixed;
+  .banner-container {
+    position: fixed; /* Fix the banner at the top */
     top: 0;
     width: 100%;
-    height: 200px; /* Adjust this value based on the height of your banner image */
-    overflow: hidden;
-    z-index: 1000; /* Ensures the banner stays on top of other content */
+    z-index: 1000; /* Ensure the banner is above other content */
   }
   
-  .banner img {
-    width: 100%;
-    height: auto;
+  .banner-image {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
   }
   
   .content {
-    margin-top: 200px; /* Adjust this value based on the height of your banner image */
+    margin-top: 200px; /* Adjust this value to be at least the height of the banner image */
     padding: 20px;
   }
-
-  /* Content Section */
-h4 {
-    margin: 20px 0;
-    font-size: 2em;
-}
-.content-section {
-    margin: 20px; 
-    padding: 15px; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    background-color: #f9fafc;
-}
-
-  
+   
   /* Content Section */
 h4 {
     margin: 20px 0;
