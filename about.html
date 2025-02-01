@@ -26,31 +26,44 @@
     <script src="scriptnav.js"></script>
 </body>
 
-<div class="banner-container">
-  <img src="WhatsApp Image 2025-01-30 at 00.03.26.jpeg" alt="banner" class="banner-image">
-</div>
-<div class="content-section">
-  <h4 class="content-heading">About OZOZ Photography</h4>
-  <p class="content-paragraph">
-       Ahmad Osama is an independent, Egyptian photographer, based in prague. 
-        While living in Egypt, Ahmad's eyes grew accoustmed to find beuty where most do not look.
-        The bustling life of cairo, along with the intellectual isolation of living in contemprory
-        Egyptian society, and the dysphoria of finding his identity as a middle-eastern man in Europe,
-        have turned Ahmad to the surreal moments that we all experience in our day to day life, with invigorating
-        controversy and relatability.
-        <br>
-    
-        Ahmad also took a keen interest in the human experience and seeks to capture the moments of
-        genuine emotional expression, a skill he acquired by operating from the shadows of the crowds of
-        humans we pass everyday.  
-        <br>
-    
-        Ahmad is not only a beacon of artistic expression with his utilisation of Candid, Urban, and Abstract
-        in street photography. His understanding of his equipment and lighting allows him to stand out in
-        professional photography, where he provides his clients with unique and time-less proffesional portraits.
-    
+<div class="scroll-container">
+    <section class="scroll-section">
+      <img src="WhatsApp Image 2025-01-30 at 00.03.26.jpeg" alt="Image">
+    </section>
+    <section class="scroll-section">
+        <h1>About OZOZ Photography</h1>
+        <p>Ahmad Osama is an independent, Egyptian photographer, based in prague. 
+            While living in Egypt, Ahmad's eyes grew accoustmed to find beuty where most do not look.
+            The bustling life of cairo, along with the intellectual isolation of living in contemprory
+            Egyptian society, and the dysphoria of finding his identity as a middle-eastern man in Europe,
+            have turned Ahmad to the surreal moments that we all experience in our day to day life, with invigorating
+            controversy and relatability.
+            <br>
+        
+            Ahmad also took a keen interest in the human experience and seeks to capture the moments of
+            genuine emotional expression, a skill he acquired by operating from the shadows of the crowds of
+            humans we pass everyday.  
+            <br>
+        
+            Ahmad is not only a beacon of artistic expression with his utilisation of Candid, Urban, and Abstract
+            in street photography. His understanding of his equipment and lighting allows him to stand out in
+            professional photography, where he provides his clients with unique and time-less proffesional portraits.
         </p>
-            </div>
+      </section>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+<script>
+  const controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    triggerElement: '#section2',
+    duration: '100%'
+  })
+  .setTween('#section2 h1', { y: '50%', opacity: 0 })
+  .addTo(controller);
+</script>
       </section>
 </body>
 </html>

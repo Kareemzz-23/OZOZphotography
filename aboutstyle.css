@@ -61,42 +61,39 @@ body {
     }
 }
 
-/* styles.css */
-body, html {
+  /* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Set a better font */
+    box-sizing: border-box;
   }
   
-  .banner-container {
-    position: fixed; /* Fix the banner at the top */
-    top: 0;
-    width: 100%;
-    height: 75vh; /* Display 3/4 of the viewport height */
-    overflow: hidden; /* Hide the overflow */
-    z-index: 1000; /* Ensure the banner is above other content */
+  /* Make the body take up the full viewport height */
+  body, html {
+    height: 100%;
+    overflow: hidden;
   }
   
-  .banner-image {
-    width: 100%; /* Make the image take the full width of the container */
-    height: auto; /* Maintain the aspect ratio */
+  /* Container for horizontal scrolling */
+  .scroll-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap sections into place */
   }
   
-  .content-section {
-    margin-top: 75vh; /* Adjust this value to match the height of the banner */
-    padding: 20px;
+  /* Style the section and image */
+  .scroll-section {
+    flex: 0 0 100vw; /* Each section is 100% of the viewport width */
+    height: 100vh;
+    scroll-snap-align: start; /* Snap to the start of the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .content-heading {
-    margin: 20px 0;
-    font-size: 2em;
-    font-weight: bold; /* Make the heading bold */
+  .scroll-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
   }
-  
-  .content-paragraph {
-    margin: 20px 0;
-    font-size: 1.2em; /* Increase the font size */
-    line-height: 1.6; /* Improve line spacing */
-  }
-
-  
