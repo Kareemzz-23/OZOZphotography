@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll on the body */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Navigation Styling */
@@ -74,44 +74,41 @@ body {
     }
 }
 
-/* Horizontal Scroll Container */
-.scroll-container {
-    display: flex;
-    height: 100vh; /* Full viewport height */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap sections into place */
-    scroll-behavior: smooth; /* Smooth scrolling */
+/* Content Section */
+.content {
     padding-top: 60px; /* Add padding to account for fixed nav */
 }
 
-/* Scroll Sections */
-.scroll-section {
-    flex: 0 0 100vw; /* Each section is 100% of the viewport width */
-    height: 100vh;
-    scroll-snap-align: start; /* Snap to the start of the section */
+/* Image Section */
+.image-section {
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: #f0f0f0; /* Add a background color for the image section */
 }
 
-/* Image Section */
-.scroll-section img {
+.image-section img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover; /* Ensures the image covers the entire section */
 }
 
 /* Text Section */
-.scroll-section h1 {
+.text-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff; /* Add a background color for the text section */
+}
+
+.text-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.scroll-section p {
+.text-section p {
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the text */
 }
